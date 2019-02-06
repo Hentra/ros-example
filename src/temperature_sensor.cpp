@@ -3,7 +3,7 @@
 #include <stdlib.h> //For rand()
 
 int main(int argc, char **argv){
-    ros::init(argc, argv, "temperature_sensor_cpp");
+    ros::init(argc, argv, "temperature_sensor_cpp", ros::init_options::AnonymousName);
     ROS_INFO("Starting temperature_sensor_cpp...");
     ros::NodeHandle nodeHandle;
     ros::Publisher tempPub = nodeHandle.advertise<sensor_msgs::Temperature>("franek/temperature", 10);

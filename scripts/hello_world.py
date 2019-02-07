@@ -3,7 +3,7 @@
 import rospy
 
 def example():
-    rospy.init_node('example')
+    rospy.init_node('example', anonymous=True)
     rospy.loginfo('Hello World')
     rospy.spin()
 

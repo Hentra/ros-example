@@ -1,0 +1,4 @@
+<launch>
+    <node name="temp_sensor_node" pkg="example" type="temperature_sensor_cpp" />
+    <node pkg="tf2_ros" type="static_transform_publisher" name="franek_broadcaster" args="0 0 0 0 0 0 map franek_link" />
+</launch>
